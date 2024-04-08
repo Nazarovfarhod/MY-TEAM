@@ -44,7 +44,7 @@ h1 {
 
 .container {
   width: 100%;
-  max-width: 1200px; /* it depends on you project */
+  max-width: 1210px; /* it depends on you project */
   margin-left: auto;
   margin-right: auto;
   padding-left: 5rem;
@@ -146,6 +146,15 @@ header {
 }
 .header-link {
   background-color: var(--midnight-green);
+
+  &:hover {
+    background-color: var(--wight-color);
+    color: var(--dark-green);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .hero {
@@ -191,9 +200,142 @@ hr {
   color: var(--wight-color);
   width: 445px;
 }
+
+/* main */
+.features {
+  background: url(../images/main-top-bg-img.png) bottom right no-repeat;
+  background-color: var(--sacramento-state-green);
+}
+.feature__container {
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+  padding-left: 16.5rem;
+  padding-right: 16.5rem;
+  width: none;
+}
+
+.feature__container-text {
+  display: flex;
+  gap: 12.5rem;
+  /* width: 111rem; */
+}
+.main-hr {
+  background-color: var(--light-color);
+  margin-bottom: 5.4rem;
+}
+.feature__container-title {
+  font-size: var(--h2-font);
+  font-weight: 700;
+  line-height: var(--body2-lh);
+  text-align: left;
+  color: var(--wight-color);
+  width: 44.5rem;
+}
+.features__list {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  width: 54rem;
+}
+.feature__item {
+  display: flex;
+  gap: 2.3rem;
+}
+.feature__item-img {
+  width: 72px;
+  height: 72px;
+}
+.feature__item__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.feature__item__text-title {
+  font-size: var(--h3-font);
+  font-weight: 700;
+  line-height: var(--h3-font-lh);
+  text-align: left;
+  color: var(--light-color);
+}
+.feature__item__text-description {
+  font-size: var(--body2-font);
+  font-weight: 600;
+  line-height: var(--body1-lh);
+  text-align: left;
+  color: var(--wight-color);
+}
+
+/* MAIN SECTION HOME */
+
+.home {
+  background: url(../images/bg-pattern-home-4-about-3.svg) top left no-repeat,
+    url(../images/bg-pattern-about-2-contact-1.svg) bottom -10rem right no-repeat;
+  background-color: var(--deep-jungle-green);
+}
+
+.home__container {
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+}
+.home__container-wrapper {
+  display: flex;
+  gap: 3rem;
+}
+
+.home__container-title {
+  font-size: var(--h2-font);
+  font-weight: 700;
+  line-height: var(--h2-font-lh);
+  text-align: center;
+  color: var(--wight-color);
+  margin-bottom: 5.6rem;
+}
+
+.home__container-title span {
+  color: var(--rapture-blue);
+}
+.home__container-texts {
+  background: url(../images/icon-quotes.svg) top left 14.2rem no-repeat;
+  padding-top: 3.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home__container-description {
+  font-size: var(--body2-font);
+  font-weight: 600;
+  line-height: var(--body2-lh);
+  text-align: center;
+  color: var(--wight-color);
+  margin-bottom: 2.4rem;
+  /* width: 35rem; */
+}
+.home__container-name {
+  font-size: var(--h3-font);
+  font-weight: 700;
+  line-height: var(--h3-font-lh);
+  text-align: center;
+  color: var(--rapture-blue);
+  margin-bottom: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+.home__container-name-text {
+  font-family: Livvic;
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.38;
+  text-align: center;
+  color: var(--wight-color);
+  margin-bottom: 3.2rem;
+}
+.home__container-img {
+  border-radius: 50%;
+}
+
 /* BRACKPOINT  MADIA TABLET*/
 
-@media (max-width: 770px) {
+@media (max-width: 1000px) {
   .header-logo-link {
     margin-right: 4.8rem;
   }
@@ -240,6 +382,114 @@ hr {
     margin-right: 0;
 
     width: 470px;
+  }
+
+  /* MAIN FEATURE */
+  .features {
+    background: url(../images/main-top-bg-img.png) top right no-repeat;
+    background-color: var(--sacramento-state-green);
+  }
+  .main-hr {
+    display: block;
+    margin-bottom: 3.2rem;
+  }
+  .feature__container {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    padding-left: 9.8rem;
+    padding-right: 9.8rem;
+    width: none;
+  }
+
+  .feature__container-text {
+    display: flex;
+    flex-direction: column;
+    gap: 6.4rem;
+    /* width: 57.3rem; */
+  }
+  .main-hr {
+    background-color: var(--light-color);
+    margin-bottom: 5.4rem;
+  }
+  .feature__container-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: left;
+    color: var(--wight-color);
+    width: 44.5rem;
+  }
+  .features__list {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    width: 57.3rem;
+  }
+
+  /* MAIN SECTION HOME */
+  .home {
+    background: url(../images/bg-pattern-home-4-about-3.svg) top left no-repeat,
+      url(../images/bg-pattern-about-2-contact-1.svg) bottom -10rem right no-repeat;
+    background-color: var(--deep-jungle-green);
+  }
+
+  .home__container {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    padding-left: 9.8rem;
+    padding-right: 9.8rem;
+  }
+  .home__container-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4.8rem;
+  }
+
+  .home__container-title {
+    font-size: 3.2rem;
+    line-height: 1;
+    margin-bottom: 4.8rem;
+    text-align: center;
+  }
+
+  .home__container-texts {
+    background: url(../images/icon-quotes.svg) top center no-repeat;
+    padding-top: 3.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .home__container-description {
+    font-size: var(--body2-font);
+    font-weight: 600;
+    line-height: var(--body2-lh);
+    text-align: center;
+    color: var(--wight-color);
+    margin-bottom: 2.4rem;
+  }
+  .home__container-name {
+    font-size: var(--h3-font);
+    font-weight: 700;
+    line-height: var(--h3-font-lh);
+    text-align: center;
+    color: var(--rapture-blue);
+    margin-bottom: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+  .home__container-name-text {
+    font-family: Livvic;
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.38;
+    text-align: center;
+    color: var(--wight-color);
+    margin-bottom: 3.2rem;
+  }
+  .home__container-img {
+    border-radius: 50%;
   }
 }
 
@@ -299,5 +549,65 @@ hr {
   }
   .mobile-nav::before {
     margin-left: 12rem;
+  }
+
+  /* MAIN FEATURE MOBILE */
+
+  .features {
+    background: url(../images/main-top-bg-img.png) top right no-repeat;
+    background-color: var(--sacramento-state-green);
+  }
+
+  .feature__container {
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    margin: 0;
+    width: none;
+  }
+
+  .feature__container-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5.6rem;
+  }
+
+  .feature__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature__container-title {
+    width: 24rem;
+  }
+  .features__list {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    width: 33.3rem;
+  }
+  .feature__item__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature__item__text-description {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* MOBILE SECTION HOME */
+
+  .home__container {
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+  .home__container-description {
+    margin-bottom: 1.6em;
+    padding: 0;
   }
 }
