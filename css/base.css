@@ -297,4 +297,7 @@ hr {
   .humburger-link {
     font-size: var(--body1-font);
   }
+  .mobile-nav::before {
+    margin-left: 12rem;
+  }
 }
