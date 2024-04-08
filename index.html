@@ -3,14 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project</title>
+    <title>MT TEAM</title>
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <!-- <link rel="stylesheet" href="./css/style.min.css"> -->
   </head>
   <body>
     <!-- HEADER START -->
-    <header class="header"></header>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header-box">
+          <a class="header-logo-link" href="#"><img class="header-logo-img" src="./images/logo.svg" alt="" width="" height=""></a>
+          <nav class="sitenav">
+            <ul class="sitenav-list">
+              <li class="sitenav-item"><a class="sitenav-link" href="#">home</a></li>
+              <li class="sitenav-item"><a class="sitenav-link" href="#">about</a></li>
+            </ul>
+          </nav>
+        </div>
+        <a class="header-link btn" href="#">contact us</a>
+        <img class="sitenav-img" src="./images/icon-hamburger.svg" alt="" width="20" height="17">
+      </div>
+      <section class="hero">
+        <div class="hero__container container">
+          <h1 class="hero__container-title">Find the <br> best <span>talent</span></h1>
+          <div class="hero__container-text">
+            <hr>
+            <p class="hero__container-description">Finding the right people and building high performing teams can be hard. Most companies aren’t tapping into the abundance of global talent. We’re about to change that.</p>
+          </div>
+
+        </div>
+
+      </section>
+      <div class="mobile-nav">
+        <nav>
+          <a class="humburger-link" href="#">home</a>
+          <a class="humburger-link" href="#">about</a>
+          <a href="#" class="mobile-btn header__btn btn">contact us</a>
+        </nav>
+      </div>
+
+    </header>
     <!-- HEADER END -->
 
     <!-- MAIN START -->
@@ -20,5 +53,20 @@
     <!-- FOOTER START -->
     <footer class="footer"></footer>
     <!-- FOOTER END -->
+
+    <script>
+      document
+        .querySelector(".sitenav-img")
+        .addEventListener("click", function () {
+          document.querySelector(".mobile-nav").style.transform =
+            "translateX(0)";
+        });
+
+      document
+        .querySelector(".mobile-nav")
+        .addEventListener("click", function () {
+          this.style.transform = "translateX(200%)";
+        });
+    </script>
   </body>
 </html>
