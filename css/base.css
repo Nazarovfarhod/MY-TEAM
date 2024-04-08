@@ -193,7 +193,7 @@ hr {
 }
 /* BRACKPOINT  MADIA TABLET*/
 
-@media (max-width: 800px) {
+@media (max-width: 770px) {
   .header-logo-link {
     margin-right: 4.8rem;
   }
@@ -249,7 +249,7 @@ hr {
   .container {
     padding-left: 2.4rem;
     padding-right: 2.4rem;
-    width: 375px;
+    width: 350px;
   }
   .sitenav {
     display: none;
