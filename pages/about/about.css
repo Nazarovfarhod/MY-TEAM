@@ -137,7 +137,6 @@ hr {
 
 .deg {
   transform: rotate(45deg);
-
 }
 
 .icon {
@@ -155,6 +154,34 @@ hr {
     transform: rotate(45deg);
     background-color: var(--rapture-blue);
   }
+}
+
+/* CLIENTS DESCTOP */
+.clients {
+  background: url(../../images/about-clients-bg-img.svg) top left no-repeat;
+  background-color: var(--sacramento-state-green);
+  padding-top: 14rem;
+  padding-bottom: 15.1rem;
+  padding-left: 16.5rem;
+  padding-right: 16.5rem;
+}
+
+.clients__container {
+  padding: 0;
+}
+
+.clients__container-title {
+  font-size: var(--h2-font);
+  font-weight: 700;
+  line-height: var(--h2-font-lh);
+  text-align: center;
+  color: var(--wight-color);
+  margin-bottom: 6.4rem;
+}
+
+.clients__container-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* BREACKPOINT */
@@ -202,6 +229,25 @@ hr {
   .feature__container {
     padding-left: 9.7rem;
     padding-right: 9.8rem;
+  }
+  /* CLIENTS tablet */
+
+  .clients {
+    background: url(../../images/about-clients-bg-img.svg) top -10rem left no-repeat;
+    background-color: var(--sacramento-state-green);
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+
+  .clients__container-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    color: var(--wight-color);
+    margin-bottom: 6.4rem;
   }
 }
 /* TABLET END */
@@ -262,6 +308,36 @@ hr {
     margin-right: auto;
     padding-left: 2.4rem;
     padding-right: 2.4rem;
+  }
+  /* CLIENTS   mobile */
+
+  .clients {
+    background: url(../../images/about-clients-bg-img.svg) top -10rem left -10rem
+      no-repeat;
+    background-color: var(--sacramento-state-green);
+    padding-top: 8.8rem;
+    padding-bottom: 8.8rem;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .clients__container-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    color: var(--wight-color);
+    margin-bottom: 8rem;
+    width: 327px;
+  }
+
+  .clients__container-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7rem;
   }
 }
 /* MOBILE END */
