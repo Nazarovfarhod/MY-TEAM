@@ -132,8 +132,12 @@ hr {
   border-radius: 50%;
   margin-bottom: -2.8rem;
   margin-bottom: -6rem;
-  transform: rotate(45deg);
   background-color: var(--rapture-blue);
+}
+
+.deg {
+  transform: rotate(45deg);
+
 }
 
 .icon {
@@ -250,7 +254,6 @@ hr {
     gap: 1.1rem;
   }
   .card {
-    /* width: 281px; */
     margin-bottom: 7.6rem;
   }
 
