@@ -56,9 +56,6 @@ hr {
   gap: 3rem;
 }
 
-.card:nth-child(6) {
-  background-color: var(--dark-green);
-}
 .card {
   display: flex;
   flex-direction: column;
@@ -68,6 +65,15 @@ hr {
   width: 350px;
   background-color: var(--sacramento-state-green);
   margin-bottom: 2.4rem;
+  position: relative;
+  transition: transform 5s;
+ &:hover .bg__card {
+opacity: 1;
+ }
+ &:hover .card-icon {
+  transform: rotate(-135deg);
+  background-color: var(--rapture-blue);
+ }
 }
 
 .card:nth-child(4) {
@@ -103,37 +109,7 @@ hr {
   color: var(--wight-color);
 }
 
-.bg__card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 3.5rem;
-  padding-left: 4.8rem;
-  padding-right: 4.8rem;
-  /* padding-bottom: 2.4rem; */
-}
 
-.bg__card-title {
-  text-align: center;
-  margin-bottom: 0.8rem;
-}
-
-.bg__card-text {
-  font-size: var(--body2-font);
-  font-weight: 600;
-  line-height: var(--body2-lh);
-  text-align: center;
-  color: var(--wight-color);
-  margin-bottom: 2.4rem;
-}
-
-.last-icon {
-  padding: 2rem;
-  border-radius: 50%;
-  margin-bottom: -2.8rem;
-  margin-bottom: -6rem;
-  background-color: var(--rapture-blue);
-}
 
 .deg {
   transform: rotate(45deg);
@@ -146,15 +122,48 @@ hr {
 
 .card-icon {
   padding: 2rem;
+  padding-left: 2.2rem;
+  padding-right: 2.2rem;
   border-radius: 50%;
   background-color: var(--light-color);
   margin-bottom: -2.8rem;
-
-  &:active {
-    transform: rotate(45deg);
-    background-color: var(--rapture-blue);
-  }
+  transition: transform 0.6s ease;
+  z-index: 100;
 }
+
+.bg__card {
+  position: absolute;
+  content: "";
+  padding-top: 3.5rem;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: var(--wight-color);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+}
+.bg__card-title {
+font-size: var(--h3-font);
+font-weight: 700;
+line-height: var(--h3-font-lh);
+text-align: center;
+color: var( --rapture-blue);
+margin-bottom: 1rem;
+}
+.bg__card-text {
+font-size: var(--body2-font);
+font-weight: 600;
+line-height: var(--body2-lh);
+text-align: center;
+color: var(--wight-color);
+margin-bottom: 2.4rem;
+}
+
+
+
 
 /* CLIENTS DESCTOP */
 .clients {
@@ -182,7 +191,8 @@ hr {
 .clients__container-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 10rem;
+  /* justify-content: space-between; */
 }
 
 /* BREACKPOINT */
@@ -250,6 +260,10 @@ hr {
     text-align: center;
     color: var(--wight-color);
     margin-bottom: 6.4rem;
+  }
+
+  .clients__container-list {
+    gap: 3rem;
   }
 }
 /* TABLET END */

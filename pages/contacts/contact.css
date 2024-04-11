@@ -5,3 +5,37 @@
   url(../../images/contact-hero-bg-bottom-img.png) bottom right no-repeat;
   background-color: var(--midnight-green);
 }
+
+.feature__item {
+  display: flex;
+  align-items: center;
+}
+
+.hero__container-title {
+font-size: var(--h1-small);
+font-weight: 700;
+line-height: 1.2;
+text-align: left;
+margin-bottom: 1.6rem;
+}
+
+.hero__container-recomendation {
+font-size: 3.2rem;
+font-weight: 700;
+line-height: 1.5;
+text-align: left;
+color: var(--light-color);
+margin-bottom: 3.2rem;
+}
+
+.feature__item-img {
+  width: 72px;
+  height: 80px;
+}
+
+.feature__item__text-description {
+font-size: var(--h3-font);
+font-weight: 700;
+line-height: var(--h3-font-lh);
+text-align: left;
+}
