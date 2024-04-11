@@ -181,6 +181,7 @@ hr {
 
 .clients__container-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -189,9 +190,10 @@ hr {
 /* TABLET START */
 @media (max-width: 1000px) {
   .hero__container {
-    padding-left: 11rem;
-    padding-right: 11.3rem;
+    padding-left: 0;
+    padding-right: 0;
     gap: 0;
+    max-width: 457px;
   }
   .header__container {
     margin-bottom: 11.2rem;
