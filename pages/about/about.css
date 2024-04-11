@@ -187,7 +187,7 @@ hr {
 .clients__container-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 10rem;
+  gap: 7.5rem;
   /* justify-content: space-between; */
 }
 
@@ -260,6 +260,28 @@ hr {
 
   .clients__container-list {
     gap: 3rem;
+  }
+
+  .first {
+    width: 120px;
+    height: 18px;
+  }
+
+  .second {
+    width: 150px;
+    height: 16px;
+  }
+  .third {
+    width: 130px;
+    height: 15px;
+  }
+  .fourth {
+    width: 120px;
+    height: 20px;
+  }
+  .fifth {
+    width: 70px;
+    height: 32px;
   }
 }
 /* TABLET END */
