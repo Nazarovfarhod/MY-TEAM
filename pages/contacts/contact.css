@@ -49,16 +49,13 @@
 .form-wrapper {
   max-width: 452px;
   width: 100%;
-
 }
 
 .form {
   display: flex;
   flex-direction: column;
+}
 
-}
-.form-label {
-}
 .form-input {
   border: none;
   background-color: transparent;
@@ -68,8 +65,9 @@
   padding-bottom: 2rem;
   border-bottom: 1px solid var(--wight-color);
   margin-bottom: 2.5rem;
+  font-size: 16px;
+  color: var(--wight-color);
 }
-
 
 textarea {
   resize: none;
@@ -87,4 +85,76 @@ textarea {
   padding-bottom: 1.1rem;
   padding-left: 3.2rem;
   padding-right: 3.2rem;
+  width: 123px;
 }
+/* BREAKPOINT  */
+
+/* CONTACT TABLET  START*/
+@media (max-width: 1000px) {
+  .hero__container {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+  .hero__container-title {
+    text-align: center;
+    margin-bottom: 2.4rem;
+  }
+
+  .hero__container-recomendation {
+    text-align: center;
+    margin-bottom: 2.4rem;
+  }
+  .form-btn {
+    /* padding-bottom: 0; */
+  }
+}
+
+/* CONTACT TABLET  END*/
+
+/* CONTACT MOBILE START*/
+
+@media (max-width: 450px) {
+  .hero {
+    background: url(../../images/contact-hero-bg-bottom-img.png) bottom -10rem right
+      no-repeat;
+    background-color: var(--midnight-green);
+  }
+
+  .hero__container {
+    padding-bottom: 10rem;
+  }
+
+
+  .hero__container-title {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1.6rem;
+  }
+
+  .feature__item {
+    display: flex;
+
+  }
+
+  .hero__container-recomendation {
+    font-family: Livvic;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .feature__item__text-description {
+    font-size: var( --body1-font);
+    font-weight: 700;
+    line-height: var(--body1-lh);
+    text-align: center;
+  }
+}
+
+/* CONTACT MOBILE END*/

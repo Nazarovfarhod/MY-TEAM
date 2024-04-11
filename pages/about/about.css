@@ -67,13 +67,13 @@ hr {
   margin-bottom: 2.4rem;
   position: relative;
   transition: transform 5s;
- &:hover .bg__card {
-opacity: 1;
- }
- &:hover .card-icon {
-  transform: rotate(-135deg);
-  background-color: var(--rapture-blue);
- }
+  &:hover .bg__card {
+    opacity: 1;
+  }
+  &:hover .card-icon {
+    transform: rotate(-135deg);
+    background-color: var(--rapture-blue);
+  }
 }
 
 .card:nth-child(4) {
@@ -109,8 +109,6 @@ opacity: 1;
   color: var(--wight-color);
 }
 
-
-
 .deg {
   transform: rotate(45deg);
 }
@@ -144,26 +142,24 @@ opacity: 1;
   bottom: 0;
   left: 0;
   opacity: 0;
+  overflow: hidden;
 }
 .bg__card-title {
-font-size: var(--h3-font);
-font-weight: 700;
-line-height: var(--h3-font-lh);
-text-align: center;
-color: var( --rapture-blue);
-margin-bottom: 1rem;
+  font-size: var(--h3-font);
+  font-weight: 700;
+  line-height: var(--h3-font-lh);
+  text-align: center;
+  color: var(--rapture-blue);
+  margin-bottom: 1rem;
 }
 .bg__card-text {
-font-size: var(--body2-font);
-font-weight: 600;
-line-height: var(--body2-lh);
-text-align: center;
-color: var(--wight-color);
-margin-bottom: 2.4rem;
+  font-size: var(--body2-font);
+  font-weight: 600;
+  line-height: var(--body2-lh);
+  text-align: center;
+  color: var(--wight-color);
+  margin-bottom: 2.4rem;
 }
-
-
-
 
 /* CLIENTS DESCTOP */
 .clients {

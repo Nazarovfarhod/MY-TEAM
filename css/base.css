@@ -72,6 +72,7 @@ main {
 }
 
 .mobile-nav {
+  background: url(../images/humburger-bg-img.png) bottom right no-repeat;
   display: none; /* Hide by default on larger screens */
   position: fixed;
   top: 0;
