@@ -188,7 +188,10 @@ hr {
   display: flex;
   flex-wrap: wrap;
   gap: 7.5rem;
-  /* justify-content: space-between; */
+}
+
+.clients__container-link:hover {
+  transform: scale(1.3);
 }
 
 /* BREACKPOINT */
