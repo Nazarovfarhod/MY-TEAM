@@ -372,6 +372,9 @@ hr {
     background-color: var(--sacramento-state-green);
     color: var(--wight-color);
   }
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 /* DESCTOP FOOTER CSS */
@@ -406,6 +409,9 @@ hr {
   &:hover {
     color: var(--light-color);
   }
+  &:active {
+    opacity: 0.5;
+  }
 }
 .footer-left__contact__item {
   font-size: 1.5rem;
@@ -415,9 +421,12 @@ hr {
   font-weight: 600;
   margin-bottom: 0.5rem;
   user-select: none;
-  transition: 0.3s;
+  transition: 0.15s;
   &:hover {
     opacity: 1;
+  }
+  &:active {
+    opacity: 0.5;
   }
 }
 .footer-right {
@@ -434,6 +443,9 @@ hr {
   &:hover {
     transform: rotate(370deg) scale(1.4);
     color: var(--light-color);
+  }
+  &:active {
+    opacity: 0.5;
   }
 }
 .copyright {
