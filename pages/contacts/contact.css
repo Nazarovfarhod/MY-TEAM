@@ -86,6 +86,19 @@ textarea {
   padding-left: 3.2rem;
   padding-right: 3.2rem;
   width: 123px;
+  cursor: pointer;
+
+
+  &:hover {
+    background-color: var(--sacramento-state-green);
+    color: var(--wight-color);
+    border-color: var(--wight-color);
+  }
+
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 /* BREAKPOINT  */
 
@@ -126,7 +139,6 @@ textarea {
     padding-bottom: 10rem;
   }
 
-
   .hero__container-title {
     font-size: 4rem;
     font-weight: 700;
@@ -137,7 +149,6 @@ textarea {
 
   .feature__item {
     display: flex;
-
   }
 
   .hero__container-recomendation {
@@ -150,7 +161,7 @@ textarea {
   }
 
   .feature__item__text-description {
-    font-size: var( --body1-font);
+    font-size: var(--body1-font);
     font-weight: 700;
     line-height: var(--body1-lh);
     text-align: center;
