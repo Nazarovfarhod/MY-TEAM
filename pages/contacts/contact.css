@@ -67,10 +67,21 @@
   margin-bottom: 2.5rem;
   font-size: 16px;
   color: var(--wight-color);
+
+  &:focus {
+    outline: none;
+    border: none;
+   border-bottom: 1px solid var(--wight-color);
+  }
 }
 
 textarea {
   resize: none;
+  &:focus {
+    outline: none;
+    border: none;
+   border-bottom: 1px solid var(--wight-color);
+  }
 }
 .form-input::placeholder {
   font-size: 16px;
